@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="build/xtend-gen/main"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="build/builddsl"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="build/xtend-gen/test"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/oehme/.m2/repository/org/eclipse/xtend/org.eclipse.xtend.lib/2.6.0/org.eclipse.xtend.lib-2.6.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/oehme/.m2/repository/org/xtext/builddsl/org.xtext.builddsl.lib/1.0.0-SNAPSHOT/org.xtext.builddsl.lib-1.0.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/oehme/.m2/repository/org/eclipse/xtext/org.eclipse.xtext.xbase.lib/2.6.0/org.eclipse.xtext.xbase.lib-2.6.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/oehme/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar" sourcepath="C:/Users/oehme/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
