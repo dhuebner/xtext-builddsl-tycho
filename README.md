@@ -1,6 +1,16 @@
 Build DSL - Tycho build setup
 =============================
 
+###Generate an Xtext Language
+
+
+1. Creates target platform - Resolve the osgi bundle dependencies against other p2 repositories 
+2. Starts a mwe2 workflow
+3. Starts Xtend compiler 
+4. Executes UI Plugin tests
+5. Creates a p2 repository to deliver the language
+
+
 Builds:
 =======
 
