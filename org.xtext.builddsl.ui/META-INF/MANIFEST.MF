@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Build DSL Editor
+Bundle-Name: org.xtext.builddsl.ui
 Bundle-Vendor: Eclipse Modeling Project
 Bundle-Version: 1.0.0.qualifier
 Bundle-SymbolicName: org.xtext.builddsl.ui;singleton:=true
@@ -27,8 +27,7 @@ Require-Bundle: org.xtext.builddsl;visibility:=reexport,
  org.eclipse.jdt.launching,
  org.eclipse.ui.console;resolution:=optional
 Import-Package: org.apache.log4j,
- org.apache.commons.logging,
- org.eclipse.xtext.xbase.lib
+ org.apache.commons.logging
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: org.xtext.builddsl.ui,
  org.xtext.builddsl.ui.contentassist.antlr,

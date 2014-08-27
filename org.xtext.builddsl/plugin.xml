@@ -3,12 +3,15 @@
 
 <plugin>
 
-   <extension point="org.eclipse.emf.ecore.generated_package">
+  <extension point="org.eclipse.emf.ecore.generated_package">
     <package 
        uri = "http://www.xtext.org/builddsl" 
        class = "org.xtext.builddsl.build.BuildPackage"
-       genModel = "model/generated/BuildDSL.genmodel" /> 
+       genModel = "org/xtext/builddsl/BuildDSL.genmodel" /> 
 	
   </extension>
-  
+
+
+
+
 </plugin>

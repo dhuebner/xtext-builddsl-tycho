@@ -7,17 +7,17 @@
  ******************************************************************************/
 package org.xtext.builddsl.scoping
 
-import org.xtext.builddsl.lib.FileExtensions
-import org.xtext.builddsl.lib.ClassExtensions
 import org.eclipse.xtext.xbase.scoping.batch.ImplicitlyImportedFeatures
+import org.xtext.builddsl.lib.ClassExtensions
+import org.xtext.builddsl.lib.FileExtensions
 
-class BuildDSLImplicitlyImportedFeatures extends ImplicitlyImportedFeatures {
+class BuildDSLImplicitlyImportedTypes extends ImplicitlyImportedFeatures {
 	
 	/**
 	 * Add methods from {@link FileExtensions} and {@link ClassExtensions} to the extension scope.
 	 */
 	override protected getExtensionClasses() {
-		(super.getExtensionClasses() + #[FileExtensions, ClassExtensions]).toList
+		(super.extensionClasses + #[FileExtensions, ClassExtensions]).toList
 	}
 	
 }

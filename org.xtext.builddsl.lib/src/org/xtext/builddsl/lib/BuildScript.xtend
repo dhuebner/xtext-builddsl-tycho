@@ -11,6 +11,7 @@ import java.io.File
 import java.lang.reflect.Field
 import java.util.List
 import java.util.Map
+import org.eclipse.xtend.lib.annotations.Accessors
 
 abstract class BuildScript {
 	
@@ -26,11 +27,11 @@ abstract class BuildScript {
 		if (_tasks == null) {
 			_tasks = newHashMap
 			for (method : class.declaredMethods) {
-				val taskAnnotation = method.annotations.findFirst[annotationType == DependsOn]
+				val taskAnnotation = method.getAnnotation(DependsOn)
 				if (taskAnnotation != null) {
 					taskDef(method.name) [
-						prerequisitedTasks = (taskAnnotation as DependsOn).value
-						runnable = [|
+						prerequisitedTasks = taskAnnotation.value
+						runnable = [
 							method.accessible = true
 							method.invoke(this)
 						]
@@ -44,7 +45,7 @@ abstract class BuildScript {
 	def getParameters() {
 		if (_parameters == null) {
 			_parameters = newHashMap
-			for (field : class.declaredFields.filter[ annotations.exists[annotationType == Param] ]) {
+			for (field : class.declaredFields.filter[isAnnotationPresent(Param)]) {
 				_parameters.put(field.name, field)
 			}
 		}
@@ -147,11 +148,12 @@ abstract class BuildScript {
 
 }
 
+@Accessors
 class TaskDef {
-	@Property ()=>void runnable
-	@Property String name
-	@Property List<String> prerequisitedTasks = newArrayList
-	@Property boolean executed = false
-	@Property boolean isExecuting = false
+	()=>void runnable
+	String name
+	List<String> prerequisitedTasks = newArrayList
+	boolean executed = false
+	boolean isExecuting = false
 }
 
