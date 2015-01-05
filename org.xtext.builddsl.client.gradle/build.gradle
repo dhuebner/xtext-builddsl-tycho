@@ -3,13 +3,13 @@ buildscript {
     mavenCentral()
   }
   dependencies {
-    classpath 'org.xtext:xtext-gradle-plugin:0.0.3'
-    classpath 'org.xtend:xtend-gradle-plugin:0.1.0'
+    classpath 'org.xtext:xtext-gradle-plugin:0.1.1'
+    classpath 'org.xtend:xtend-gradle-plugin:0.3.6'
   }
 }
 
-apply plugin: 'xtend'
-apply plugin: 'xtext'
+apply plugin: 'org.xtend.xtend'
+apply plugin: 'org.xtext.xtext'
 
 repositories {
   //replace this with your company repo
@@ -18,13 +18,13 @@ repositories {
 }
 
 dependencies {
-  compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.6.0'
+  compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.8.0-SNAPSHOT'
   compile 'org.xtext.builddsl:org.xtext.builddsl.lib:1.0.0-SNAPSHOT'
   xtextTooling 'org.xtext.builddsl:org.xtext.builddsl:1.0.0-SNAPSHOT'
 }
 
 xtext {
-  version = '2.6.0'
+  version = '2.8.0-SNAPSHOT'
   languages{
     builddsl {
       setup = 'org.xtext.builddsl.BuildDSLStandaloneSetup'
@@ -35,8 +35,4 @@ xtext {
       }
     }
   }
-}
-
-xtend {
-	useDaemon = true
 }
