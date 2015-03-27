@@ -7,7 +7,7 @@
 	<packaging>pom</packaging>
 	<properties>
 		<tycho-version>0.22.0</tycho-version>
-		<xtext-version>2.8.1-SNAPSHOT</xtext-version>
+		<xtext-version>2.9.0-SNAPSHOT</xtext-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<modules>
@@ -93,12 +93,28 @@
 		</pluginManagement>
 	</build>
 	<repositories>
+		<!-- <repository>
+			<id>xtext28</id>
+			<url>https://oss.sonatype.org/content/repositories/orgeclipsextext-1029</url>
+		</repository>
+		<repository>
+			<id>xtend28</id>
+			<url>https://oss.sonatype.org/content/repositories/orgeclipsextend-1027</url>
+		</repository>-->
 		<repository>
 			<id>central snapshots</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
+		<!-- <pluginRepository>
+			<id>xtext28</id>
+			<url>https://oss.sonatype.org/content/repositories/orgeclipsextext-1029</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>xtend28</id>
+			<url>https://oss.sonatype.org/content/repositories/orgeclipsextend-1027</url>
+		</pluginRepository> -->
 		<pluginRepository>
 			<id>central snapshots</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>

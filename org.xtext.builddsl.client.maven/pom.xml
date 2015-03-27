@@ -9,14 +9,9 @@
 			<artifactId>org.xtext.builddsl.lib</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>org.eclipse.xtext</groupId>
-			<artifactId>org.eclipse.xtext.util</artifactId>
-			<version>2.8.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 	<properties>
-		<xtext-version>2.8.1-SNAPSHOT</xtext-version>
+		<xtext-version>2.9.0-SNAPSHOT</xtext-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
