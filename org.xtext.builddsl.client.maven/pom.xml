@@ -11,7 +11,7 @@
 		</dependency>
 	</dependencies>
 	<properties>
-		<xtext-version>2.8.2</xtext-version>
+		<xtext-version>2.9.0-SNAPSHOT</xtext-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
