@@ -27,6 +27,7 @@
 				<configuration>
 					<!-- UI or headless (headless = NO Workbench) -->
 					<useUIHarness>true</useUIHarness>
+					<appArgLine>-consoleLog</appArgLine>
 					<argLine>${memory-settings} ${os-jvm-flags}</argLine>
 				</configuration>
 			</plugin>
