@@ -10,4 +10,4 @@ env:
    - sh -e /etc/init.d/xvfb start - sleep 10
 script:
   - cd org.xtext.builddsl.parent
-  - mvn -Dmaven.test.skip=true clean verify 
+  - mvn clean verify 
