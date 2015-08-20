@@ -16,3 +16,5 @@ Builds:
 
 Jenkins URL: https://dhuebner.ci.cloudbees.com/job/xtext-builddsl-tycho/  - [![Build Status](https://dhuebner.ci.cloudbees.com/job/xtext-builddsl-tycho/badge/icon)](https://dhuebner.ci.cloudbees.com/job/xtext-builddsl-tycho/)
 
+Travis CI URL: https://travis-ci.org/dhuebner/xtext-builddsl-tycho - 
+[![Build Status](https://travis-ci.org/dhuebner/xtext-builddsl-tycho.svg)](https://travis-ci.org/dhuebner/xtext-builddsl-tycho)
